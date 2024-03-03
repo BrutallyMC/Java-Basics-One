@@ -206,13 +206,13 @@ public class Main {
     // To make a method "static" we would just add "static"
     // after the "private" in the method as shown below:
 
-    /*
+        /*
 
-    private static void printMessage() {
-        System.out.println("This is a String printed using a static method!");
-    }
+        private static void printMessage() {
+            System.out.println("This is a String printed using a static method!");
+        }
 
-     */
+        */
 
     // After making the method "static" we could then
     // implement the method in our initial method by
@@ -226,7 +226,16 @@ public class Main {
     //
     // An example of making a method useful would be
     // using methods to pass information on into other
-    // methods. Below you can see this:
+    // methods. Below you can see this in :
+
+    // In this example we have created a method called
+    // "usefulMethod" which has a Parameter of a String
+    // DataType with a value we gave the String a
+    // Parameter we named "message". Now, whenever we
+    // call this method and give it a string it will
+    // output the String we gave it (using the variable
+    // "message") then output that String to the console.
+
 
     private static void usefulMethod(String message) {
         System.out.println(message);
