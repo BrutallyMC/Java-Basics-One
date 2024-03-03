@@ -9,6 +9,12 @@ package com.frostyrealms.lectureone;
 // - DataTypes (Primitive and Non-Primitive)
 // - Methods (Including Parameters and Returning)
 
+// USEFUL RESOURCES
+//
+// Java Variables: https://www.w3schools.com/java/java_variables.asp
+// Java Data Types: https://www.w3schools.com/java/java_data_types.asp
+// Java Methods: https://www.tutorialspoint.com/java/java_methods.htm
+
 // You can think of a class as a "page of a book"
 // and a package is the "contents page". As you create
 // more classes (or pages of the book) it helps form
@@ -35,6 +41,27 @@ public class Main {
     // "public" was upper-case.
 
     public static void main(String[] args) {
+
+        // Using a custom method to pass information
+        // through the "method pipeline" explained
+        // in the "methods" section of this lecture.
+        usefulMethod("I'm passing this through a custom made method!");
+        // You can even make multiple of these to pass
+        // even more information through methods!
+        usefulMethod("This is even more information! Wow!");
+
+        // Here we are passing information over to the
+        // method we created called "intMethod",
+        // creating a variable named "result" as well
+        // as giving "intMethod" the DataType parameter
+        // the method requires of a String.
+        int result = intMethod("This is an experiment with using different return types! This is a string but the method will also return with a number.");
+
+        // Here we are using the above created "result"
+        // variable and printing it to the console.
+        // This is how we can use methods in more ways
+        // than just giving information!
+        System.out.println(result);
 
         // Pretty much everything in Java is just
         // methods and variables.
@@ -168,6 +195,7 @@ public class Main {
         // "real" exception to this would be Strings
         // as it is always going to be a Non-Primitive
         // DataType as explained before.
+
     }
 
     // VARIABLES
@@ -199,6 +227,7 @@ public class Main {
 
     private void printMessage() {
         System.out.println("This is a String printed using a method!");
+
     }
 
     // In order for us to use this method in our initial
@@ -226,7 +255,7 @@ public class Main {
     //
     // An example of making a method useful would be
     // using methods to pass information on into other
-    // methods. Below you can see this in :
+    // methods. This can be seen in the blow method:
 
     // In this example we have created a method called
     // "usefulMethod" which has a Parameter of a String
@@ -236,8 +265,41 @@ public class Main {
     // output the String we gave it (using the variable
     // "message") then output that String to the console.
 
+    // An easy way to explain methods is that in this
+    // example, the original method is the end of a
+    // pipeline, the Parameter(s) "(String message)"
+    // portion is the liquid that went through the pipe
+    // and is inside the method (or "pipeline") is the
+    // liquid that is being moved to the end of the
+    // "pipeline" (our original method).
 
+    // Simple method to run Parameters throughout
+    // this entire class.
     private static void usefulMethod(String message) {
         System.out.println(message);
     }
+
+    // Now this is a bit more tricky to wrap your head
+    // around; just like methods can be used to pass
+    // information it can also TAKE IN information.
+    // When we are taking information that is what we
+    // call a "Returning Method". In the above example
+    // method we use the word "void", this is a
+    // "Return Type" void is the "default setting".
+    // The definition, not only in Java but generally,
+    // means "nothing". With this being said, the above
+    // method "useful method" doesn't need to return
+    // anything since it is using the Void Return Type.
+    // Void is used for when you don't care whether the
+    // method returns anything, however, what if you did
+    // want the method to return something? This is how
+    // we would go about doing this.
+
+    private static int intMethod(String intMessageString) {
+        System.out.println(intMessageString);
+        return 9;
+    }
+
+    // Woohoo! This is the end of the first lecture!
+    // We're gonna keep it going! :)
 }
