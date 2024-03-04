@@ -1,3 +1,11 @@
 
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(àªÅö8‰Á÷´à1
+T
+java:S2589P"7Remove this expression which always evaluates to "true"(›ñï¹8×ê¿¼à1
+Y
+java:S2589F"7Remove this expression which always evaluates to "true"(‚î“‹ıÿÿÿÿ8€–®¼à1
+x
+java:S3923#"[Remove this conditional structure or edit its code blocks so that they're not all the same.(ø™’¹8Ô›¼à1
+}
+java:S3923."[Remove this conditional structure or edit its code blocks so that they're not all the same.(º¾Ö¡ıÿÿÿÿ8Ô›¼à1
+I
+java:S1125F"'Remove the unnecessary boolean literal.(‚î“‹ıÿÿÿÿ8ƒ–®¼à1
